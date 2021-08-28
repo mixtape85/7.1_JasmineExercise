@@ -58,8 +58,7 @@ function calculateMonthlyPayment(values) {
   let num = values.years*12;
 
   let result = (P*iRate)/(1-Math.pow((1+iRate),(-1*num)));
-  console.log(result.toFixed(2));
-  document.getElementById("monthly-payment")
+  
   document.getElementById("monthly-payment").innerText = `$ ${result.toFixed(2)}`;
 }
 
