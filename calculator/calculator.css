@@ -61,6 +61,11 @@ button {
   border: 3px solid black
 }
 
+button:hover {
+  background-color: rgb(95, 95, 95);
+  transition: ease-in-out 0.3s;
+}
+
 input {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
