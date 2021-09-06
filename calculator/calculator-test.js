@@ -1,14 +1,25 @@
 
 it('should calculate the monthly rate correctly', function () {
-  expect().toEqual();
+  const initialValues = {
+    amount: 250000,
+    years: 30,
+    rate: 3.75
+  }
+  expect(calculateMonthlyPayment(initialValues)).toEqual('1157.79');
 });
 
 
 it("should return a result with 2 decimal places", function() {
-  // ..
+  const values = {
+    amount: 100000,
+    years: 15,
+    rate: 3.195
+  }
+  expect(calculateMonthlyPayment(values)).toEqual('700.00');
 });
 
-/// etc
+
+//Notes for what I want tests to do later:
 
 // it should throw an error if inputs are invalid - input of $ or , or letters
 // it should pull the values from the DOM
